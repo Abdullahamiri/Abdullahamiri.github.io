@@ -1,0 +1,140 @@
+body {
+    font-family: 'lato', sans-serif;
+    font-size: 12px;
+    background: #fff;
+}
+
+nav {
+    margin: 30px auto;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background: green;
+    font-size: 0;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+ nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transform: all 0.5s ease 0s;
+}
+
+nav a:nth-child(1) {
+    width: 100px;
+}
+nav a:nth-child(2) {
+    width: 110px;
+}
+nav a:nth-child(3) {
+    width: 100px;
+}
+nav a:nth-child(4) {
+    width: 160px;
+}
+nav a:nth-child(5) {
+    width: 120px;
+}
+nav .home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+}    
+
+a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100;
+    background-color: #e74c3c;
+}  
+
+a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+}  
+
+a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+}  
+
+a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+}  
+
+
+.bgf {
+    margin: 3% 15%;
+    width: 960px;
+    aspect-ratio: auto 960 / 275;
+    height: 300px;
+}
+
+h1 {
+    padding: 3% 15%;
+    font-size: 3.5em;
+    color: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+h2 {
+    color: greenyellow;
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+p {
+    text-align: center;
+    padding-top: 5px;
+}
+
+li {
+    color: #4D4C7D;
+    font-size: 1.6em;
+    line-height: 2;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    color: grey;
+    border-width: 5px;
+    width: 5%;
+}
+
+
+
